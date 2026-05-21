@@ -101,7 +101,6 @@ export default function CoursEssaiForm() {
 
     try {
       const apiKey = import.meta.env.VITE_API_KEY
-      console.log('env', import.meta.env, apiKey)
       const response = await fetch(`${apiUrl}/document/create`, {
         method: 'POST',
         headers: {
